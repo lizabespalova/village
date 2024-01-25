@@ -1,0 +1,49 @@
+body {
+    overflow: hidden; /* чтобы скрыть часть мишки, выезжающей за границы body */
+    position: relative;
+    background-color: #b0acac !important;}
+
+#Bear {
+    position: fixed;
+    right: -100px; /* начальное положение за пределами экрана */
+    bottom: 0;
+    transition: right 1s ease-in-out; /* анимация с продолжительностью 1 секунда */
+}
+
+body:hover #Bear {
+    right: 50px; /* конечное положение (выезд) при наведении курсора */
+}
+
+@media (max-width: 767px) {
+    #Bear {
+        display: none; /* Спрятать изображение медведя на маленьких экранах */
+    }
+}
+.wrapper{
+    position: relative;
+    overflow-x: hidden;
+}
+.menu{
+    position: fixed;
+    left: 0; top: 0;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+    transform: translateX(-100%);
+}
+.menu-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+}
+.menu-list a{
+    text-decoration: none;
+}
+.menu-activ{
+    transform: translateX(0%);
+}
