@@ -12,29 +12,26 @@
 
 <div class="wrapper">
     <div class="menu">
-           <nav class="menu-list">
-            <a href="#">Категория 1</a>
-            <a href="#">Категория 2</a>
-            <a href="#">Категория 3</a>
-            <a href="#">Категория 4</a>
-            <a href="#">Категория 5</a>
-            <a href="#">Категория 6</a>
-            <a href="#">Категория 7</a>
-            <a href="#">Категория 8</a>
-            <a href="#">Категория 9</a>
-            <a href="#">Категория 10</a>
-            <a href="#">Категория 11</a>
-            <a href="#">Категория 12</a>
-            <a href="#">Категория 13</a>
-            <a href="#">Категория 14</a>
-            <a href="#">Категория 15</a>
-            <a href="#">Категория 16</a>
-            <a href="#">Категория 17</a>
-            <a href="#">Категория 18</a>
-            <a href="#">Категория 19</a>
-            <a href="#">Категория 20</a>
-            <a href="#">Категория 21</a>
-            <a href="#">Категория 22</a>
+        <nav id="menuVertical">
+            <ul>
+                <li><a href="#2"><div class="img_n"><img src="/templates/images/categories.png"></div><span>+ Навігація</span></a>
+                    <ul>
+                        <?php include 'E:\village\app\views\main_page\categories.php'; ?>
+                    </ul>
+                </li>
+                <li><a href="#3"><div class="img_n"><img src="/templates/images/login.png"></div><span>+ Профіль</span></a>
+                    <ul>
+                        <li><a href="#3-1">Мій профіль</a></li>
+                        <li><a href="#3-2">Мої вправи</a></li>
+                        <li><a href="#3-2">Мої завдання</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#1"><div class="img_n"><img src="/templates/images/question.png"></div><span>Запитати</span></a></li>
+                <li><a href="#4"><div class="img_n"><img src="/templates/images/thief.png"></div><span>Шахраї</span></a></li>
+
+                <li><a href="#5"><div class="img_n"><img src="/templates/images/door.png"></div><span>Вихід</span></a></li>
+            </ul>
         </nav>
     </div>
 <img id="Bear" src="/templates/images/logo.png" alt="Мишка">
